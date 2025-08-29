@@ -1,7 +1,7 @@
-# HDB Resale Price Prediction
+# AhmadAlAuzaie-Capstone
 
 ## Project Description
-This project implements a machine learning pipeline to predict HDB (Housing & Development Board) resale prices in Singapore. The pipeline includes data cleaning, preprocessing, model training and evaluation. Multiple regression models are trained and compared to find the best performing one based on various metrics.
+This project implements a machine learning pipeline to predict the risk of developing chronic diseases based on a patient's medical history and lifestyle factors. This would enable early intervention and improve preventative healthcare. The pipeline includes data cleaning, preprocessing, model training and evaluation. Multiple regression models are trained and compared to find the best performing one based on various metrics.
 
 ## Prerequisities and Installation Instructions
 

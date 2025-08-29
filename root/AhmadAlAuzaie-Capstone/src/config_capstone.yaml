@@ -1,0 +1,57 @@
+file_pathCapstone: './root/data/PredictRisk_ChronicDiseases.csv'
+file_type: csv
+delimiter: ','
+target_columnCapstone: Risk_of_Heart_Disease
+target_typeCapstone: classification
+val_test_size: 0.2
+val_size: 0.5
+
+param_grid:
+  regressor__alpha: [0.1, 1, 10, 100, 1000]
+  regressor__fit_intercept: [True, False]
+cv: 5
+scoring: r2.5
+
+numerical_features:
+  - Age
+  - Blood_Pressure
+  - Blood_Sugar_Levels
+
+nominal_features:
+  - Family_History
+  - Smoking_Status
+  - Phyisical_Activity
+  - Alcohol_Consumption
+
+ordinal_features:
+  - BMI
+  - Cholesterol_Levels
+
+passthrough_features:
+  - Risk_of_Heart_Disease
+
+Family_History_catagories:
+  - Heart Disease
+  - Diabetes
+  - Cancer
+
+Smoking_Status_catagories:
+  - Never Smoked
+  - Former Smoker
+  - Current Smoker
+
+Phyisical_Activity_catagories:
+  - Monthly
+  - Weekly
+  - Rarely
+
+Alcohol_Consumption_catagories:
+  - Monthly
+  - Weekly
+  - Occasionally
+  - Never
+
+Risk_of_Heart_Disease_catagories:
+  - Low Risk
+  - High Risk
+
